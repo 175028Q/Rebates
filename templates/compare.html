@@ -1,0 +1,149 @@
+{% extends 'includes/layout.html'%}
+{% block body %}
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Rebate</title>
+</head>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="rebates">Accounts</a>
+        </li>
+          <li class="breadcrumb-item active"> <a href ="compare">Comparing Of Credit Card Rebates</a></li>
+      </ol>
+      <!-- Example DataTables Card-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Different Types Of Credit Card Rebates</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                    <th> &nbsp </th>
+                  <th> <img src ="static/photos/citibank.PNG" width="140px" height="90px"> </th>
+                  <th> <img src ="static/photos/OCBC365.PNG" width="140" height="90px">
+                  </th>
+                  <th><img src ="static/photos/hsbc.PNG" width="140" height="90px">
+                  </th>
+                  <th><img src ="static/photos/dbs.PNG" width="140" height="90px">
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th> &nbsp</th>
+                  <th>CitiBank Cashback Card</th>
+                  <th>OCBC 365 Credit Card</th>
+                  <th>HSBC Advanced Card</th>
+                  <th>DBS Live Fresh Card</th>
+                <tr>
+                  <th>Basic CashBack</th>
+                  <td>0.25%</td>
+                  <td>0.3%</td>
+                  <td>1.5%</td>
+                  <td>5%
+                      <br>
+                      online/app transaction
+                  </td>
+                </tr>
+                <tr>
+                  <th>Bonus Cashback</th>
+                  <td>7.75% (Dining, Grab, Petrol, Groceries)
+                      <br>
+                      19.75% (UberEats)</td>
+                  <td>
+                      6% for weekeng Dining
+                      <br>
+                      3% for:
+                      <br>
+                       Weekday Dining Locally
+                      <br>
+                       Overseas Dining
+                      <br>
+                       Online
+                      <br>
+                       Grocery
+                      <br>
+                       Recurring Telecommunications Bill
+                      <br>
+                       Medical (applicable only for Principal Cardmembers who are also OCBC Bank Child Development Account Trustees)
+                  </td>
+                  <td>1% (for spending above $2,000/month)
+                      <br>
+                      1% (for HSBC Advance account holders)
+                  </td>
+                  <td>5% (payments made via Visa Paywave)
+                  </td>
+                </tr>
+                <tr>
+                  <th>Minimum spending
+                      <br>
+                      (per month)</th>
+                  <td>$888</td>
+                  <td>$600</td>
+                  <td>None</td>
+                  <td>$700</td>
+                </tr>
+                <tr>
+                  <th>CashBack Cap</th>
+                    <td>$25</td>
+                    <td>$80</td>
+                    <td>$$125</td>
+                    <td>$70</td>
+
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Your Website 2017</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+{% endblock %}
+</html>

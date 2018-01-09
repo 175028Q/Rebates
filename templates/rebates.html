@@ -1,0 +1,160 @@
+{% extends 'includes/layout.html'%}
+{% block body %}
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Rebate</title>
+</head>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="rebates">Accounts</a>
+        </li>
+          <li class="breadcrumb-item active"> <a href ="compare">Comparing Of Credit Card Rebates</a></li>
+      </ol>
+      <!-- Example DataTables Card-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> CitiBank CashBack CreditCard
+            <br>
+            Account Number: 001-3427-002
+            </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Statement Date</th>
+                  <th>Total CashBack Rebates</th>
+                  <th>View</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2017/05</td>
+                  <td>$25.40</td>
+                  <td><button style="background-color:skyblue" onClick="window.location.href='Mayciti'">View Details</button></td>
+                </tr>
+                <tr>
+                  <td>2017/06</td>
+                  <td>$13.95</td>
+                  <td><button style="background-color:skyblue" onClick="window.location.href='JunCiti'">View Details</button></td>
+
+                </tr>
+                <tr>
+                  <td>2017/08</td>
+                  <td>$13.56</td>
+                  <td><button style="background-color:skyblue" onClick="window.location.href='Augciti'">View Details</button></td>
+                </tr>
+                </tr>
+                <tr>
+                  <td>2017/10</td>
+                  <td>$30.34</td>
+                  <td><button style="background-color:skyblue" onClick="window.location.href='citibank'">View Details</button></td>
+                </tr>
+                <tr>
+                  <td>2017/11</td>
+                  <td>$7.30</td>
+                  <td><button style="background-color:skyblue" onClick="window.location.href='NovCiti'">View Details</button></td>
+                </tr>
+                <tr>
+                  <th>Total CashBack For Year 2017</th>
+                  <th>${{ citiAmount }}</th>
+                  <th> &nbsp</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+
+      <!-- Example DataTables Card-->
+
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> OCBC 365 Credit Card
+            <br>
+            Account Number:155-3256-001
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Statement Date</th>
+                  <th>Total CashBack Rebates</th>
+                  <th>View</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2017/08</td>
+                  <td>$12.90</td>
+                  <td><button style="background-color:skyblue" onClick="window.location.href='AugOcbc'">View Details</button></td>
+                </tr>
+                <tr>
+                  <td>2017/11</td>
+                  <td>$15.20</td>
+                  <td><button style="background-color:skyblue" onClick="window.location.href='NovOcbc'">View Details</button></td>
+
+                </tr>
+                <tr>
+                  <th>Total CashBack For Year 2017</th>
+                  <th>${{ ocbcAmount }}</th>
+                  <th> &nbsp</th>
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Your Website 2017</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+{% endblock %}
+</html>
