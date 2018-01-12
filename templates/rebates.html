@@ -23,9 +23,12 @@
       <!-- Example DataTables Card-->
       <div class="card mb-3">
         <div class="card-header">
-          <i class="fa fa-table"></i> CitiBank CashBack CreditCard
-            <br>
-            Account Number: 001-3427-002
+          <i class="fa fa-table"></i> 
+            Account:
+            {% for user in users%}
+            {{ user.get_type() }}
+            {{ user.get_number() }}
+            {% endfor %}
             </div>
         <div class="card-body">
           <div class="table-responsive">
@@ -83,9 +86,12 @@
 
       <div class="card mb-3">
         <div class="card-header">
-          <i class="fa fa-table"></i> OCBC 365 Credit Card
-            <br>
-            Account Number:155-3256-001
+          <i class="fa fa-table"></i> 
+             Account :
+            {% for user in user%}
+            {{ user.get_type() }}
+            {{ user.get_number() }}
+            {% endfor %}
         </div>
         <div class="card-body">
           <div class="table-responsive">
