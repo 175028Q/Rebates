@@ -19,3 +19,25 @@ class Cards():
         self.__type = type
 
 
+class CreditCard():
+    def __init__(self,type,number):
+        self.__type=type
+        self.__number=number
+
+
+
+    def get_type(self):
+        return self.__type
+
+
+    def set_type(self,type):
+        self.__type=type
+
+
+
+    def get_number(self):
+        return self.__number
+
+
+    def set_number(self,number):
+        self.__number=number
