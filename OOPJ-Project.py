@@ -12,12 +12,16 @@ def test():
 
 @app.route('/rebates')
 def rebates():
+    userlist=[]
+    userlists=[]
+    userlist=MainProcess.processAccounts()
+    userlists=MainProcess.processAccountss() #secondcard
     totalCiti = 0
     totalOcbc = 0
     totalCiti = MainProcess.rebatesTransaction
     totalOcbc = MainProcess.rebatesTransaction
 
-    return render_template('rebates.html', citiAmount = totalCiti, ocbcAmount = totalOcbc)
+    return render_template('rebates.html', citiAmount = totalCiti, ocbcAmount = totalOcbc,users=userlist, user=userlists)
 
 @app.route('/compare')
 def compare():
